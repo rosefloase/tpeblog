@@ -5,11 +5,26 @@
 
 body{
     font-family: Courier New;
-    background-color: green;
+}
+
+.header{
+    background-color: #205cdc;
+    max-width: 60%;
+    margin: auto;
 }
 
 .title{
+    text-align: right;
     font-family: pmdfont;
+}
+
+.body{
+    text-align: center;
+}
+
+#pagetitle{
+    text-align: center;
+    margin: auto;
 }
 
 h1{
