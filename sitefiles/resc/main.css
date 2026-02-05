@@ -5,36 +5,78 @@
 
 body{
     font-family: Courier New;
+    position: relative;
+    top: -.08in;
 }
 
 .header{
     background-color: #205cdc;
+    background: linear-gradient(#1d5ce2 0%, #205cdc 15%, #205cdc 80%, #4287e9 100%);
+    outline: solid #4287e9;
+    border-radius: 0, 0, 0, .05in;
     max-width: 60%;
     margin: auto;
 }
 
-.title{
+.logo{
+    height: 1.5in;
+    image-rendering: pixelated;
+}
+
+.buttondiv{
     text-align: right;
-    font-family: pmdfont;
 }
 
 .body{
-    text-align: center;
-}
-
-#pagetitle{
+    display: flex;
+    align-items: stretch;
     text-align: center;
     margin: auto;
+    max-width: 60%;
+}
+
+.title{
+    text-align: center;
+    margin: auto;
+}
+
+.innerbody{
+    flex-grow: 3;
+    text-align: left;
+}
+
+.colorinner{
+    padding: 0.05in;
+    padding-left: .1in;
+    background-color: purple;
+}
+
+.recents{
+    background-color: green;
+    text-align: right;
+    min-width: 30%;
+}
+
+.copyright{
+    width: 100%;
 }
 
 h1{
  font-size: 0.8in;
 }
+h2{
+    font-family: pmdfont;
+    font-size: 0.6in;
+}
 
 p{
- font-size: 0.2in;
+ font-size: 0.23in;
 }
 
 a{
  font-size: 0.25in;
+}
+
+w{
+    background-color: white;
 }

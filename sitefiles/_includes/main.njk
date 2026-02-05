@@ -53,12 +53,21 @@ seodesc: "adventures made in PS and FL! i don't know what those stand for"
 </head>
 
 <div class=header>
-    <img src="/resc/img/logo.png">
+    <img class="logo" src="/resc/img/logo.png">
 </div>
-<h2 id="pagetitle">{{ title }}</h2>
 	<div class=body>
-		{{ content | safe }}
-		<div class="copyright">
+        <div class="innerbody">
+            <h2 class="title">{{ title }}</h2>
+            <div class="colorinner">
+        		{{ content | safe }}
+            </div>
+        </div>
+        <div class="recents">
+            <a href="https://thepersonever.net/">go to tpe</a>
+        </div>
+    </div>
+    <div class=body>
+        <div class="copyright">
 			<small style="float: left; width: justify; max-width: 100%;">thepersonever.net - <a style="font-size: unset" href="https://thepersonever.net/c-cgl-1-1.txt" target=_blank>(C+CGL)</a></small>
 			<small style="float: right; width: justify; max-width: 100%;">made with 11ty &lt;3</small>
 			<br>
