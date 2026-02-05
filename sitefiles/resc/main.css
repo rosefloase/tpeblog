@@ -1,0 +1,25 @@
+@font-face {
+    font-family: pmdfont;
+    src: url('fonts/pmdfont.ttf')  format("truetype");
+}
+
+body{
+    font-family: Courier New;
+    background-color: green;
+}
+
+.title{
+    font-family: pmdfont;
+}
+
+h1{
+ font-size: 0.8in;
+}
+
+p{
+ font-size: 0.2in;
+}
+
+a{
+ font-size: 0.25in;
+}

@@ -1,0 +1,70 @@
+---
+seoimg: "/favicon.ico"
+seodesc: "adventures made in PS and FL! i don't know what those stand for"
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% if passivestyle %}
+		{{ passivestyle | safe }}
+	{% endif %}
+	<link rel='stylesheet' href='/resc/main.css' media='screen' type='text/css' />
+	{% if title %}
+		<title>tpeblog - {{ title }}</title>
+	{% else %}
+		<title>tpeblog!</title>
+	{% endif %}
+	<meta name="description" content="{{seodesc}}">
+
+<!-- Google / Search Engine Tags -->
+
+	{% if title %}
+		<meta itemprop="name" content="tpeblog - {{ title }}">
+	{% else %}
+		<meta itemprop="name" content="tpeblog!">
+	{% endif %}
+<meta itemprop="description" content="{{seodesc}}">
+<meta itemprop="image" content="https://psfla.net/{{seoimg}}">
+
+<!-- ughhhhhhhhhhhhhhhhhhFacebook Meta Tags -->
+<meta property="og:url" content="https://psfla.net/{{canonurl}}">
+<meta property="og:type" content="website">
+	{% if title %}
+		<meta property="og:title" content="tpeblog - {{ title }}">
+	{% else %}
+		<meta property="og:title" content="tpeblog!">
+	{% endif %}
+<meta property="og:description" content="{{seodesc}}">
+<meta property="og:image" content="https://psfla.net/{{seoimg}}">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+
+	{% if title %}
+		<meta name="twitter:title" content="PSFLA - {{ title }}">
+	{% else %}
+		<meta name="twitter:title" content="PSFL adventures">
+	{% endif %}
+<meta name="twitter:description" content="{{seodesc}}">
+<meta name="twitter:image" content="https://psfla.net/{{seoimg}}">
+
+  </head>
+  <body id=body style="margin:auto; text-align: center;">
+		<div class=header>
+				<h1 class="title">tpeblog!</h1>
+		</div>
+	<h2>{{ title }}</h2>
+		<div class=body>
+			{{ content | safe }}
+			<div class="copyright">
+				<small style="float: left; width: justify; max-width: 100%;">thepersonever.net - <a style="font-size: unset" href="https://thepersonever.net/c-cgl-1-1.txt" target=_blank>(C+CGL)</a></small>
+				<small style="float: right; width: justify; max-width: 100%;">made with 11ty &lt;3</small>
+				<br>
+			</div>
+		</div>
+	 </div>
+  </body>
+</html>
