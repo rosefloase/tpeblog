@@ -4,17 +4,25 @@
 }
 
 body{
+    --bg-color: #ffffff;
+    background-color: var(--bg-color);
     font-family: Courier New;
     position: relative;
     top: -.08in;
 }
 
+.all{
+    background-color: #f7f7f7;
+    background: linear-gradient(90deg, var(--bg-color) 0%, #979797 1%, #979797 99%, var(--bg-color) 100%);
+    margin: auto;
+    width: 60%;
+    padding: 0 .5% 0 .5%;
+}
+
 .header{
-    background-color: #205cdc;
-    background: linear-gradient(#1d5ce2 0%, #205cdc 15%, #205cdc 80%, #4287e9 100%);
-    outline: solid #4287e9;
-    border-radius: 0, 0, 0, .05in;
-    max-width: 60%;
+    background-color: #1d5ce2;
+    background: linear-gradient(#205cdc 0%, #2f7ce7 5%, #205cdc 95%, #205cdc 100%);
+    width: 100%;
     margin: auto;
 }
 
@@ -32,7 +40,7 @@ body{
     align-items: stretch;
     text-align: center;
     margin: auto;
-    max-width: 60%;
+    width: 100%;
 }
 
 .title{
@@ -41,6 +49,7 @@ body{
 }
 
 .innerbody{
+    background-color: white;
     flex-grow: 3;
     text-align: left;
 }
@@ -58,7 +67,9 @@ body{
 }
 
 .copyright{
-    width: 100%;
+    margin: auto;
+    width: 60%;
+    padding: 0 .5% 0 .5%;
 }
 
 h1{
@@ -73,8 +84,12 @@ p{
  font-size: 0.23in;
 }
 
-a{
+a{    
  font-size: 0.25in;
+}
+
+a:link {
+	color: green;
 }
 
 w{
