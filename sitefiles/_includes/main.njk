@@ -54,11 +54,19 @@ seodesc: "adventures made in PS and FL! i don't know what those stand for"
 
 <div class="all">
 	<div class=header>
-    	<img class="logo" src="/resc/img/logo.png">
+    	<a href=/><img class="logo" src="/resc/img/logo.png"></a>
 	</div>
 	<div class=body>
-        <div class="innerbody" s>
-            <h2 class="title">{{ title }}</h2>
+        <div class="innerbody">
+            <h2 class="title">{{ title }}
+			{% if hidedate %}	
+				</h2>
+			{% elif time %}
+				<br>{{ page.date | toTime }}</h2>
+				</h2>
+			{% else %}
+				<br>{{ page.date | toDate }}</h2>
+			{% endif %}
             <div class="colorinner">
         		{{ content | safe }}
             </div>

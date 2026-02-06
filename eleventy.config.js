@@ -4,8 +4,23 @@ export const config = {
   }
 };
 
-export default function (eleventyConfig) {
+import { DateTime } from "luxon";
+
+export default function(eleventyConfig) {
 //	eleventyConfig.addPassthroughCopy("sitefiles/favicon.ico");
+  eleventyConfig.addFilter("toDate", (dateString) => {
+    var awesomedate = DateTime.fromJSDate(dateString, { zone: "utc" }).toFormat(
+      "LLLL d, yyyy",
+    );
+    return awesomedate.toLowerCase()
+  });
+
+    eleventyConfig.addFilter("toTime", (dateString) => {
+    var awesomedate = DateTime.fromJSDate(dateString, { zone: "utc" }).toFormat(
+      "LLLL d, yyyy';' t",
+    );
+    return awesomedate.toLowerCase()
+  });
+
 	eleventyConfig.addPassthroughCopy("sitefiles/resc/");
-	
 };

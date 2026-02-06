@@ -1,0 +1,141 @@
+---
+layout: main.njk
+seodesc: "legacy blogpost. no description was written"
+date: 2024-12-10
+title: "flash. everywhere. in my pants."
+---
+<center>
+<p><w>well well well. call me jcn, creator of imood and neglegent newsposter!</w></p>
+
+<p><w>i've been busy with... people for the last few months, so i haven't really had the time nor motivation to work on this site. however, i have played a few games!!! notably, i beat psychonauts and night in the woods</w></p>
+
+<p><img src=/resc/img/legacy/gamesijustbeat.png class=smallpic></p>
+
+<p><w>yeah. these were all really cheap on the steam sale, which is why i bought them :3
+<br>night in the woods is like. really good. the story is interesting, and characters feel like real people!! it's a wonderful read, and you need to play it. right now. its so good RAGHHH</w></p>
+
+<p><img src=/resc/img/legacy//nitwshitgif.gif class=smallpic></p>
+
+<p><w>psychonaughts is good too! its not a stellar story game, but its ideas and gameplay are really inventive. it also has good animations :3</w></p>
+
+<p><img src=/resc/img/legacy//goodnightraz.gif class=smallpic></p>
+
+<p><w>i've also moved back to windows from linux, because my friends have wanted me to try pcvr! unfortunately, pcvr breaks a lot for me! for no reason that i can find online! so fuck me i guess
+<br>i've been using <a href=https://conemu.github.io/ target=_blank>conemu</a> as a replacement for guake, and it works okay. i can use git to upload to my github repos and nekoweb, so i have no issues! i've switched to krita on windows still too, since i've gotten more used to it than photoshop as of recent. i'm still using flash to animate though, due to it being the animation software i'm most fluent in</w></p>
+
+<p><w>speaking of flash, i've recently finished two flashes for my site!!
+<br>they were both things that i started months before december, but had ceased development on due to the aforementioned busyness. i really like how both of them turned out!! :D</w></p>
+
+<p><w>the first thing i completed was the intro flash! i always wanted my site to have a cool introduction, but i felt that just audio didn't really cut it... it was more than a lot of people had, but it still wasn't as in-your-face as i wanted it to be. however, after finishing the vault, i had the idea to make my site intro an ANIMATION!</w></p>
+
+<p><img src=/resc/img/legacy//asssit.png class=smallpic></p>
+
+<p><w>yeah. i really like how it turned out in the end, even if the navbar images are mixely... i might change it to JUST have a home link, as well as making it more obvious that you can skip animations in flashes that have menus :p</w></p>
+
+<p><w>i also set up a gihub repo <a href=https://github.com/rosefloase/tpeintro target=_blank>here</a>, so that you can check out the source files :D
+<br>i don't have a link to it directly in the flash though, due to it already being super cramped :( it IS in the downloads section of the links page though!!! so um. yeah. someone might find it someday</w></p>
+
+<p><w>the second thing i finished was the <a href=https://thepersonever.net/xdx3xp/tracks target=_blank>new xDx3xP audio player!!!</a></w></p>
+
+<p><w>i don't remember if i started this before or after the vault flash, but developing this was a... slightly harder task to overcome than both the vault, and the intro combined.
+<br>the first problem i had to overcome with this project was manipulating json in as3. it sucks! a lot!
+<br>i wanted to have my latest song show up first, as it did on the javascript version, but i couldn't figure out how to read the json's length correctly. i ended up just reversing the index of the songs' json by hand :/
+<br>as3 is the only language i know that forces me to bend json data to it, instead of making it read json data correctly 
+<br>but!!! i managed to be able to read image urls from the json!!! and add album images directly with just actionscript instead of embeding each and every album image!!!! once i finish fixing the bugs, i'll never need to touch the fla again :D
+<br>back on the topic of figuring out as3's bullshit, i also had trouble reading the url params correctly :( in-browser trace logs just. randomly stopped showing up, and i had to troubleshoot with sending strings to the song title textbox!!! 
+<br>my first idea for getting url params was to call a javascript function from flash that would return a url parameter, but that kinda just. didn't work. i then tried to send flash data FROM a javascript function, but i had trouble finding the id of the swf... so, i wasn't able to talk to the swf from javascript at all :( after trying both of these things, looked up "how do i send a variable to a flash good god" and</w></p>
+
+<img src=/resc/img/legacy//flashvars.png class="bigpic">
+
+
+<p><w><a href=https://helpx.adobe.com/flash/kb/pass-variables-swfs-flashvars.html target=_blank>oh cool</a>
+<br>swfobject allows you to set movie paramaters dynamically, so i just! did that! and now share urls work again :3 <a href=https://thepersonever.net/xdx3xp/tracks?song=awcrumpets target=_blank>try it out!!</a></w></p>
+
+<p><w>after it went live though, i noticed an error. if you sent someone a share url, the player just... wouldn't go to different songs. apparenlty this issue was due to flashvars being read as a string instead of a number. fixed that up today though! :D
+<br>i'm also planning on adding a tracklist, and my girlfriend has been complaining about my nugget not having a clickwheel :(
+
+<p><img src=/resc/img/legacy//notaclickwheel.png class=smallpic></p>
+
+<p><w>the filename IS ipod.swf, so i probably could add one... but im not sure how exactly it would work, or if it would even be fun to use on devices without mice</w></p>
+
+<p><w>uh. moving on to a blog post i sat on for a while
+<br>the following post was written october 28th of this year, but i meant to animate it! unfortunately, im scared of sharing my voice! and i got really, really busy! so i didn't!
+<br>what you're seeing here is a HTML-ified version of <a href=https://thepersonever.net/transcripts/oct2824.txt target=_blank>this</a> txt document. for your viewing pleasure. i have not reread or updated it otherwise :p</w></p>
+
+<p><w>coming at you LIVE from ssh hell, it's THEPERSONEVER DOT NET!!!! BUT ANIMATED WOAHHHHH (i guess not since you're looking at this but whatever)
+<br>since the move to nekoweb, i've been working with git more! and the cli :p
+<br>i've also moved to linux, thanks to a fuckup with grub making my windows install inaccessable
+<br>but, i am NOT here just to praise linux and neovim and everything to the ends of the earth. i'm here to talk about the vault!!!</w></p>
+
+<p><w>the vault is a new flash you can find on the art page. when clicking on its icon, it'll dim the rest of the page and open up! 
+<br>i've come to think of overviews as pretty lame, so just. go check it out!!! i've embedded ruffle into the page, so you don't even need to be on desktop to view it :p
+<br>"oh man jade but what are you going to cover in this blogpost if you don't just talk about the flash" DEVELOPMENT!!!!!!!!! (lots and lots of explosion sfx)</w></p>
+
+<p><w>1: json as3 hell :D
+<br>(jade unshrivles up into not a piece of paper)</w></p>
+
+<p><w>hi</w></p>
+
+<p><w>JSON in AS3 IS STUPID. I DON'T KNOW HOW TO GET MAX VALUES. that's the only problem i had</w></p>
+
+<p><w>my original plan was to make a system in flash that read a json file, and then constructed everything from that json... so i could just. do all of the info stuff at school.
+<br>however, AS3 not understanding JSON well put an end to that idea! i still saved all my writing to a JSON file, but all of the images and buttons  had to be baked into the flash. truly, we live in the worst timeline.
+<br>the other AS3 stuff, like the boarder flash and coding all the other info stuff was fun!!! that json.max hickup was really the only thing that frusturated me :p</w></p>
+
+<p><w>2: vector stuff!!!!
+<br>(snes transition maybe!!! like slowly unpixelating)</w></p>
+
+<p><w>hi</w></p>
+
+<p><w>once i got the flash to a state where i could edit the json and just. see how it would show up in the flash,  i started storyboarding the animation! ...in flash
+<br>working with vectors directly in flash is easier than drawing and importing images made in krita, so that's how i mainly storyboarded. 
+<br>i originally had the idea that i would have myself looking at the sky, while it was overtaken by... the TPE home background gif. which was... kinda lame as hell!
+<br>after finishing the storyboard though, i realized how STUPID that was. i updated the glasses scene to show the sun instead of the TPE background, and told myself to remember to use a sunset instead of the stupid tpe background thing i was thinking of before
+<br>after finishing the storyboard, i then started to draw and program the animations for the info section of the flash! i also added the skip function at that time, since i was tired of waiting through the animation each time i wanted to test the info part. 
+<br>and then... i moved on to actually making the final art</w></p>
+
+<p><w>3: krita! yay!
+<br>(just a squash and stretch appearence)</w></p>
+
+<p><w>hi</w></p>
+
+<p><w>once i finished the storyboard, and finalized the code for the info section, i started to make the finalized assets in krita.
+<br>krita...</w></p>
+
+<p><w>krita is pretty good! it's not the exact same as photoshop, but it provides a pencil tool (the fill lineart brush) and is easy to set up on linux,especially  compared to photoshop :p
+<br>however, krita's PSD exports don't import to flash correctly... meaning i have to export each layer manually
+<br><i>technically</i>, krita has its own "export each layer as one image!" function, but it literally exports EACH layer as one image!!!
+<br>this is a problem for me, as usually my characters use more than one layer. and my backgrounds use more than one layer...
+<br>this fact, along with the script being generally unrelaiable, lead me to export each flash layer individually</w></p>
+
+<p><w>however, exporting layers by hand didn't save me from my worst nightmare...</w></p>
+
+<small><w>(HORROR TITLE CARD!!!!!)</w></small>
+<h2><w>TAKING ONE DAY TO DRAW EACH PANEL!!!!!</w></h2>
+
+<p><w>the vault is meant to kinda just... feel like a homestuck flash. homestuck flashes are pretty much just a bunch of panels stitched together, synced to music! 
+<br>hussie was able to make flashes really fast by using spritemode and a lot of already-made assets when making these flashes
+<br>i didn't really have that luxury</w></p>
+
+<p><w>each panel in this flash was completly original, for two reasons
+<br>1: i wanted to be artsey fartsey
+<br>2: this was my first flash with homestuck stuff in it!!!!</w></p>
+
+<p><w>so, i was basically working from scratch, and didn't have much to base my art off of</w></p>
+
+<p><w>this lead to each panel taking a whole day to complete! this meant that, ignoring all the writing and code stuff, i'd have to spend at least 7 days on art for this flash</w></p>
+
+<p><w>how hussie did cascade in two weeks will always mystify me</w></p>
+
+<p><w>(jade shrinks and then comes back)</w></p>
+
+<p><w>hi</w></p>
+
+<p><w>um. this is where i'd end the blog post... but!
+<br>as you can see, i'm trying something new
+<br>do you like these flash blogposts? do you want more? do you want me to spend more time on the actual artistry of these? do you want me to just. pngtuber this thing? or should i go back to the previous style of text-only blogposts? 
+<br>let me know at THESE_LINKS.</w></p>
+
+<p><w>(jade shrinks into nothingness)</w></p>
+
+    </center>

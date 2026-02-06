@@ -3,6 +3,11 @@
     src: url('fonts/pmdfont.ttf')  format("truetype");
 }
 
+@font-face {
+    font-family: comicsans;
+    src: url('fonts/comicsans.ttf')  format("truetype");
+}
+
 body{
     --bg-color: #ffffff;
     background-color: var(--bg-color);
@@ -94,4 +99,20 @@ a:link {
 
 w{
     background-color: white;
+}
+
+small{
+ font-size:0.17in; 
+}
+
+comic{
+    font-family: comicsans;
+}
+
+.smallpic{
+    width: 60%;
+}
+
+.bigpic{
+    width: 90%;
 }
