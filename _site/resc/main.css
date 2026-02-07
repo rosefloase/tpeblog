@@ -10,18 +10,22 @@
 
 body{
     --bg-color: #ffffff;
+    --sitewidth: 70%;
+    margin: 0;
+    padding: 0;
     background-color: var(--bg-color);
     font-family: Courier New;
     position: relative;
-    top: -.08in;
 }
 
 .all{
+    --thispadding: .65%;
     background-color: #f7f7f7;
+    height: 100%;
     background: linear-gradient(90deg, var(--bg-color) 0%, #979797 1%, #979797 99%, var(--bg-color) 100%);
     margin: auto;
-    width: 60%;
-    padding: 0 .5% 0 .5%;
+    width: var(--sitewidth);
+    padding: 0 var(--thispadding) 0 var(--thispadding);
 }
 
 .header{
@@ -73,7 +77,8 @@ body{
 
 .copyright{
     margin: auto;
-    width: 60%;
+    width: 100%;
+    background-color: var(--bg-color);
     padding: 0 .5% 0 .5%;
 }
 
