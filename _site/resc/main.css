@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: akira;
+    src: url('fonts/akira.otf')  format("truetype");
+}
+
+@font-face {
     font-family: comicsans;
     src: url('fonts/comicsans.ttf')  format("truetype");
 }
@@ -99,6 +104,8 @@ a{
 }
 
 a:link {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
 	color: green;
 }
 
@@ -120,4 +127,9 @@ comic{
 
 .bigpic{
     width: 90%;
+}
+
+.center{
+    text-align: center;
+    margin: auto;
 }

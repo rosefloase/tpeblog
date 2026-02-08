@@ -2,10 +2,8 @@
 layout: main.njk
 seoimg: "/favicon.ico"
 seodesc: "meow"
-date: 2026-02-04
-title: index
+hidedate: yeah
 ---
-year-month-day
 
 <w>hey, fuck ur CULTURE.
 <br>i ain't got no CULTURE.</w>

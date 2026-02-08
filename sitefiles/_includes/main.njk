@@ -1,6 +1,6 @@
 ---
 seoimg: "/favicon.ico"
-seodesc: "adventures made in PS and FL! i don't know what those stand for"
+seodesc: "ngh"
 ---
 
 <!doctype html>
@@ -72,7 +72,16 @@ seodesc: "adventures made in PS and FL! i don't know what those stand for"
             </div>
         </div>
         <div class="recents">
-            <a href="https://thepersonever.net/">go to tpe</a>
+			<p><w>recent blog posts:</w></p>
+			{% set legacyposts = collections.legacy | reverse %}
+			{%- for legacy in legacyposts -%}
+				{% if loop.index0 < 3 %}    
+					<a href="{{ legacy.url }}"><w>{{ legacy.data.title }}</w></a><br>
+				{% endif %}
+			{%- endfor -%}
+			<br>
+			<br><a href="/blogs/legacy/"><w>legacy blogposts</w></a>
+            <br><a href="https://thepersonever.net/"><w>back 2 tpe</w></a>
         </div>
 	</div>
 	<div class=body >
