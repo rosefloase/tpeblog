@@ -11,6 +11,7 @@ seodesc: "ngh"
 	{% if passivestyle %}
 		{{ passivestyle | safe }}
 	{% endif %}
+	<link rel='stylesheet' href='/resc/highlight.css' media='screen' type='text/css' />
 	<link rel='stylesheet' href='/resc/main.css' media='screen' type='text/css' />
 	{% if title %}
 		<title>tpeblog - {{ title }}</title>
@@ -75,16 +76,19 @@ seodesc: "ngh"
 			&nbsp;
 		</div>
 		<div class="recents">
-<!--			<p><w>recent blog posts:</w></p>
-			{% set legacyposts = collections.legacy | reverse %}
-			{%- for legacy in legacyposts -%}
+			<img src="/resc/img/cloud.png" class="clouds">
+			<p><w>recent blog posts:</w></p>
+			{%- for post in collections.all | reverse -%}
 				{% if loop.index0 < 3 %}    
-					<a href="{{ legacy.url }}"><w>{{ legacy.data.title }}</w></a><br>
+					<a href="{{ post.url }}" style="display: block;"><w>{{ post.data.title }}</w></a><br>
 				{% endif %}
 			{%- endfor -%}
-			<br> -->
+			<p><w>---</w></p>
+			<br><a href="/blogs/"><w>all blogposts</w></a>
 			<br><a href="/blogs/legacy/"><w>legacy blogposts</w></a>
-            <br><w><a href="https://thepersonever.net/art" class="small">back 2 tpe</a> - <a href="https://ko-fi.com/thepersonever" target="_blank" class="small">donate</a></w>
+            <br><br><w><a href="https://thepersonever.net/art" class="small">back 2 tpe</a> - <a href="https://ko-fi.com/thepersonever" target="_blank" class="small">donate</a></w>
+			
+			<img src="/resc/img/cloud.png" class="clouds" id="lowerclouds">
         </div>
 	</div>
 	<div class=body >

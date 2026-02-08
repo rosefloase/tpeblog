@@ -4,6 +4,8 @@ export const config = {
   }
 };
 
+
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import { DateTime } from "luxon";
 
 export default function(eleventyConfig) {
@@ -23,4 +25,6 @@ export default function(eleventyConfig) {
   });
 
 	eleventyConfig.addPassthroughCopy("sitefiles/resc/");
+
+  eleventyConfig.addPlugin(syntaxHighlight);
 };

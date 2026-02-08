@@ -1,0 +1,19 @@
+---
+layout: main.njk
+seodesc: "all blogposts written for this site :D"
+title: "all blogposts"
+hidedate: yeah
+eleventyExcludeFromCollections: true
+---
+
+<div class="center">
+<!--    {% for post in collections.all reversed %} this will be uncommented when i have enough posts for this page to look good :)
+        {% unless post.data.tags contains "legacy" %}
+            <a href="{{ post.url }}" style="display: block;"><w>{{ post.data.title }}</w></a><br>
+        {% endunless %}
+    {% endfor %} -->
+
+			{%- for post in collections.all reversed -%}    
+					<a href="{{ post.url }}" style="display: block;"><w>{{ post.data.title }}</w></a><br>
+			{%- endfor -%}
+</div>

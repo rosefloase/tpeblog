@@ -84,9 +84,32 @@ body{
 }
 
 .recents{
+    position: relative;
     background-color: #5353f3;
     text-align: right;
     min-width: 30%;
+}
+
+.recents *{
+    position: relative;
+    z-index: 2;
+}
+
+.clouds{
+    image-rendering: pixelated;
+    opacity: .5;
+    width: 101.1%; 
+    position: absolute; 
+    top: 0; 
+    left: -1.1%; 
+    transform: scaleY(-1);
+    z-index: 1;
+}
+
+#lowerclouds{
+    transform: scaleY(1) scaleX(-1);
+    top: unset;
+    bottom: 0;
 }
 
 .copyright{
@@ -137,6 +160,10 @@ small{
 
 comic{
     font-family: comicsans;
+}
+
+indt{
+     text-indent: .2in;
 }
 
 .smallpic{

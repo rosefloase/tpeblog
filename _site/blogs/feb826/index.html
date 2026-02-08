@@ -1,0 +1,149 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel='stylesheet' href='/resc/highlight.css' media='screen' type='text/css' />
+	<link rel='stylesheet' href='/resc/main.css' media='screen' type='text/css' />
+	
+		<title>tpeblog - new blog is LIVE!</title>
+	
+	<meta name="description" content="legacy blogpost. no description was written">
+
+<!-- Google / Search Engine Tags -->
+
+	
+		<meta itemprop="name" content="tpeblog - new blog is LIVE!">
+	
+<meta itemprop="description" content="legacy blogpost. no description was written">
+<meta itemprop="image" content="https://blog.thepersonever.net//favicon.ico">
+
+<!-- ughhhhhhhhhhhhhhhhhhFacebook Meta Tags -->
+<meta property="og:url" content="https://blog.thepersonever.net/">
+<meta property="og:type" content="website">
+	
+		<meta property="og:title" content="tpeblog - new blog is LIVE!">
+	
+<meta property="og:description" content="legacy blogpost. no description was written">
+<meta property="og:image" content="https://blog.thepersonever.net//favicon.ico">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+
+	
+		<meta name="twitter:title" content="tpeblog - new blog is LIVE!">
+	
+<meta name="twitter:description" content="legacy blogpost. no description was written">
+<meta name="twitter:image" content="https://blog.thepersonever.net//favicon.ico">
+</head>
+
+<div class="all">
+	<div class=header>
+    	<a href=/><img class="logo" src="/resc/img/logo.png"></a>
+	</div>
+	<h2 class="title">new blog is LIVE!
+	
+		<br>february 8, 2026</h2>
+	
+	<div class=body>
+        <div class="innerbody">
+            <div class="colorinner">
+        		
+<p><w>hi!!! hi hi hello!!!!!
+<br>as i am writing this, i'm currently in the final stages of creating my NEW BLOG PAGE.
+</w></p>
+
+<div class="center">
+    <img class="bigpic" src="/resc/img/blog/indev.png">
+</div>
+
+<p><w>this revamp of my blog was created during the tpe <a href=https://thepersonever.net/revamp target="_blank">revamp</a>, so that my blog could have better searchability (both on site and on external aggregators) and maintainability!
+<br>my <a href="https://thepersonever.net/blogg" target="_blank">old blog page</a> was just one static page, with an iframe in the center meant for navigating between posts. there was no way to search, no way to send links to specific blog posts, and the tiny iframe was way too cramped for in-depth reading. the design of the page was also very distracting... but i mean that's kinda just how most of my pages are :p
+<br>later on in the page's life, i hacked in support for links... but it was so. so hacky
+</w></p>
+
+<pre class="language-js"><code class="language-js"><span class="token keyword">let</span> params <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URLSearchParams</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>search<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			
+<span class="token comment">// if the ?post= param is longer than the max characters that can be in a properly named blog document, don't do anything with the param</span>
+<span class="token comment">// (meant to keep people from just linking any page on the internet into the iframe)</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>params<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">"post"</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> params<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">"post"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length <span class="token operator">&lt;</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+	document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"blog"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>src <span class="token operator">=</span> <span class="token string">"/iframes/blogblogs/"</span><span class="token operator">+</span>params<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">"post"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+			
+<span class="token comment">// change the iframe's src if a ?post= param is present on page init</span>
+<span class="token keyword">function</span> <span class="token function">blogchange</span><span class="token punctuation">(</span><span class="token parameter">windowloc</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>windowloc <span class="token operator">!=</span> <span class="token string">"/iframes/bblawhgg.html"</span> <span class="token operator">&amp;&amp;</span> windowloc <span class="token operator">!=</span> <span class="token string">"/iframes/bblawhgg"</span><span class="token punctuation">)</span><span class="token punctuation">{</span>		
+		<span class="token function">changeurl</span><span class="token punctuation">(</span>windowloc<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">"/iframes/blogblogs/"</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">else</span><span class="token punctuation">{</span>
+	<span class="token keyword">var</span> stateObj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">foo</span><span class="token operator">:</span> <span class="token string">"bar"</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+	history<span class="token punctuation">.</span><span class="token function">pushState</span><span class="token punctuation">(</span>stateObj<span class="token punctuation">,</span> <span class="token string">"page 2"</span><span class="token punctuation">,</span> <span class="token string">"blogg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// changes the url of the main page to be a share-ready link when a post is opened in the iframe</span>
+<span class="token keyword">function</span> <span class="token function">changeurl</span><span class="token punctuation">(</span><span class="token parameter"><span class="token keyword">get</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">var</span> stateObj <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token literal-property property">foo</span><span class="token operator">:</span> <span class="token string">"bar"</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+	history<span class="token punctuation">.</span><span class="token function">pushState</span><span class="token punctuation">(</span>stateObj<span class="token punctuation">,</span> <span class="token string">"page 2"</span><span class="token punctuation">,</span> <span class="token string">"blogg?post="</span> <span class="token operator">+</span> get<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+
+<p><w> with this new site, i'll be able to write blog posts that cover more than just personal topics! i'm obviously still planning to write site and personal update posts, but i'll also be able to cover topics like linux howtos and how i make art :D
+</w></p>
+
+<p><w>    
+</w></p>
+
+<p><w>    
+</w></p>
+
+<p><w>    
+</w></p>
+
+<p><w>    
+</w></p>
+
+<p><w>    
+</w></p>
+
+<p><w>    
+</w></p>
+
+<p><w>    
+</w></p>
+            </div>
+        </div>
+		<div class="between">
+			&nbsp;
+		</div>
+		<div class="recents">
+			<img src="/resc/img/cloud.png" class="clouds">
+			<p><w>recent blog posts:</w></p>    
+					<a href="/blogs/feb826/" style="display: block;"><w>new blog is LIVE!</w></a><br>
+				    
+					<a href="/blogs/legacy/jan726/" style="display: block;"><w>OFF MY EDUCATION SHIT!</w></a><br>
+				    
+					<a href="/blogs/legacy/sep1325/" style="display: block;"><w>i love eating rices!</w></a><br>
+				<p><w>---</w></p>
+			<br><a href="/blogs/"><w>all blogposts</w></a>
+			<br><a href="/blogs/legacy/"><w>legacy blogposts</w></a>
+            <br><br><w><a href="https://thepersonever.net/art" class="small">back 2 tpe</a> - <a href="https://ko-fi.com/thepersonever" target="_blank" class="small">donate</a></w>
+			
+			<img src="/resc/img/cloud.png" class="clouds" id="lowerclouds">
+        </div>
+	</div>
+	<div class=body >
+  	  <div class="copyright">
+			<div>
+				<small style="float: left; width: justify; max-width: 100%;">thepersonever.net -&nbsp;</small>
+				<a style="font-size: unset; float: left;" href="https://thepersonever.net/c-cgl-1-1.txt" target=_blank>&nbsp;(C+CGL)</a> 			
+				
+				<small style="float: right; width: justify; max-width: 100%;">made with 11ty &lt;3</small>
+			</div>
+			<br>
+		</div>
+	</div>
+</div>
+  </body>
+</html>

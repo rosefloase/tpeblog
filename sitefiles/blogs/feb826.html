@@ -1,0 +1,76 @@
+---
+layout: main.njk
+seodesc: "legacy blogpost. no description was written"
+date: 2026-02-08
+title: "new blog is LIVE!"
+tags: 
+    - meta
+    - revamp
+    - tpe
+    - web
+    - programing
+---
+
+<p><w>hi!!! hi hi hello!!!!!
+<br>as i am writing this, i'm currently in the final stages of creating my NEW BLOG PAGE.
+</w></p>
+
+<div class="center">
+    <img class="bigpic" src="/resc/img/blog/indev.png">
+</div>
+
+<p><w>this revamp of my blog was created during the tpe <a href=https://thepersonever.net/revamp target="_blank">revamp</a>, so that my blog could have better searchability (both on site and on external aggregators) and maintainability!
+<br>my <a href="https://thepersonever.net/blogg" target="_blank">old blog page</a> was just one static page, with an iframe in the center meant for navigating between posts. there was no way to search, no way to send links to specific blog posts, and the tiny iframe was way too cramped for in-depth reading. the design of the page was also very distracting... but i mean that's kinda just how most of my pages are :p
+<br>later on in the page's life, i hacked in support for links... but it was so. so hacky
+</w></p>
+
+{% highlight js %}
+let params = new URLSearchParams(location.search);
+			
+// if the ?post= param is longer than the max characters that can be in a properly named blog document, don't do anything with the param
+// (meant to keep people from just linking any page on the internet into the iframe)
+if (params.get("post") && params.get("post").length < 8){ 
+	document.getElementById("blog").src = "/iframes/blogblogs/"+params.get("post"); 
+}
+			
+// change the iframe's src if a ?post= param is present on page init
+function blogchange(windowloc){
+	if (windowloc != "/iframes/bblawhgg.html" && windowloc != "/iframes/bblawhgg"){		
+		changeurl(windowloc.replace("/iframes/blogblogs/", ""));
+	}
+	else{
+	var stateObj = { foo: "bar" };
+	history.pushState(stateObj, "page 2", "blogg");
+	}
+}
+
+// changes the url of the main page to be a share-ready link when a post is opened in the iframe
+function changeurl(get){
+	var stateObj = { foo: "bar" };
+	history.pushState(stateObj, "page 2", "blogg?post=" + get);
+}
+{% endhighlight %}
+
+<p><w> with this new site, i'll be able to write blog posts that cover more than just personal topics! i'm obviously still planning to write site and personal update posts, but i'll also be able to cover topics like linux howtos and how i make art :D
+</w></p>
+
+<p><w>    
+</w></p>
+
+<p><w>    
+</w></p>
+
+<p><w>    
+</w></p>
+
+<p><w>    
+</w></p>
+
+<p><w>    
+</w></p>
+
+<p><w>    
+</w></p>
+
+<p><w>    
+</w></p>
