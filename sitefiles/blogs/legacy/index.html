@@ -12,6 +12,6 @@ hidedate: yeah
 <div class="center">
 {% assign legacyposts = collections.legacy | reverse %}
 {% for legacy in legacyposts %} 
-	<p><a href="{{ legacy.url }}"><w>{{ legacy.data.title }}</w></a><br></p>
+	<a href="{{ legacy.url }}" style="display: block;"><w>{{ legacy.data.title }}</w></a><br>
 {% endfor %}
 </div>
