@@ -14,20 +14,21 @@
 }
 
 body{
-    --bg-color: #ffffff;
+    --bg-color: #ffffff00;
     --sitewidth: 70%;
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
     font-family: Courier New;
     position: relative;
+    background-image: url(/resc/img/paper.png);
 }
 
 .all{
-    --thispadding: .65%;
+    --thispadding: .75%;
     background-color: #f7f7f7;
     height: 100%;
-    background: linear-gradient(90deg, var(--bg-color) 0%, #979797 1%, #979797 99%, var(--bg-color) 100%);
+    background: linear-gradient(90deg, var(--bg-color) 0%, #696969 1%, #696969 99%, var(--bg-color) 100%);
     margin: auto;
     width: var(--sitewidth);
     padding: 0 var(--thispadding) 0 var(--thispadding);
@@ -49,17 +50,19 @@ body{
     text-align: right;
 }
 
+.title{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    background-color: white;
+}
+
 .body{
     display: flex;
     align-items: stretch;
     text-align: center;
     margin: auto;
     width: 100%;
-}
-
-.title{
-    text-align: center;
-    margin: auto;
 }
 
 .innerbody{
@@ -71,11 +74,17 @@ body{
 .colorinner{
     padding: 0.05in;
     padding-left: .1in;
-    background-color: purple;
+    background-color: #c9c9b1;
+}
+
+.between{
+    max-width: 2%;
+    background: linear-gradient(90deg, #C9C9B1 0%, #a7a794 45%, #6d6d6d 52%, #4242c2 55%, #5353F3 100%);
+    min-height:auto;
 }
 
 .recents{
-    background-color: green;
+    background-color: #5353f3;
     text-align: right;
     min-width: 30%;
 }
@@ -83,7 +92,8 @@ body{
 .copyright{
     margin: auto;
     width: 100%;
-    background-color: var(--bg-color);
+    background-color: #ffffff;
+place-items: center;
     padding: 0 .5% 0 .5%;
 }
 
@@ -107,6 +117,10 @@ a:link {
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
 	color: green;
+}
+
+a.small{
+    font-size: .15in;
 }
 
 w{
