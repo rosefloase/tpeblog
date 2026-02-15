@@ -42,7 +42,8 @@ body{
 }
 
 .logo{
-    height: 1.5in;
+    min-width: 30%;
+    max-width: 100%;
     image-rendering: pixelated;
 }
 
@@ -177,4 +178,25 @@ indt{
 .center{
     text-align: center;
     margin: auto;
+}
+
+@media screen and (orientation:portrait){
+    .all{
+        width: 95%;
+    }
+
+    .body{
+        flex-direction: column;
+    }
+    .innerbody{
+        width: 100%;
+        flex-grow: unset;
+    }
+    .recents{
+        width: 100%;
+    }
+    .between{
+        display: none;
+    }
+
 }
