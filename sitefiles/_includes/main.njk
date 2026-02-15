@@ -31,7 +31,9 @@ seodesc: "a blog for thepersonever :D"
 <meta itemprop="image" content="https://blog.thepersonever.net/{{seoimg}}">
 
 <!-- ughhhhhhhhhhhhhhhhhhFacebook Meta Tags -->
-<meta property="og:url" content="https://blog.thepersonever.net/{{canonurl}}">
+{% if canonurl %}
+	<meta property="og:url" content="https://blog.thepersonever.net/{{canonurl}}">
+{% endif %}
 <meta property="og:type" content="website">
 	{% if title %}
 		<meta property="og:title" content="tpeblog - {{ title }}">
